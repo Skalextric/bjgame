@@ -19,7 +19,7 @@ class BJGame:
     def probs(self):
         number_of_cards = sum(self.deck.values())
         if number_of_cards == 0:
-            raise ValueError("Deck empty, need to shuffle")
+            raise ValueError("Deck empty. Need to shuffle")
         return {card_name: nums / number_of_cards for card_name, nums in self.deck.items()}
 
     def shuffle(self):
